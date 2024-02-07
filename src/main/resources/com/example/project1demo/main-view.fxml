@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="848.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1demo.controller.GraphController">
+    <left>
+        <VBox prefHeight="339.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Key">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin></Label>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="exp" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddExp" prefHeight="30.0" prefWidth="70.0" text="e">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="pi" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddPi" prefHeight="30.0" prefWidth="70.0" text="π" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="sin" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddSin" prefHeight="30.0" prefWidth="70.0" text="sin" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="cos" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddCos" prefHeight="30.0" prefWidth="70.0" text="cos" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="arccot" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="tan" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddTan" prefHeight="30.0" prefWidth="70.0" text="tan" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="cot" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddCot" prefHeight="30.0" prefWidth="70.0" text="cot" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="asin" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddArcsin" prefHeight="30.0" prefWidth="70.0" text="arcsin" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="acos" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddArccos" prefHeight="30.0" prefWidth="70.0" text="arccos" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="atan" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddArctan" prefHeight="30.0" prefWidth="70.0" text="arctan" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="sinh" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddSinh" prefHeight="30.0" prefWidth="70.0" text="sinh" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="cosh" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddCosh" prefHeight="30.0" prefWidth="70.0" text="cosh" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="abs" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddAbs" prefHeight="30.0" prefWidth="70.0" text="|□|" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button fx:id="sqrt" alignment="CENTER" mnemonicParsing="false" onAction="#handleAddSqrt" prefHeight="30.0" prefWidth="70.0" text="√" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="sec" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font></Button>
+                    </children>
+                </GridPane>
+                <VBox fx:id="leftVBox" prefHeight="34.0" prefWidth="159.0">
+                    <children>
+                        <Group fx:id="groupInput">
+                            <children>
+                                <TextField onKeyTyped="#handleOnInputFunction" onMouseClicked="#handleAppendText" prefHeight="34.0" prefWidth="171.0" />
+                                <Button layoutX="146.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleOnDeleteFunction" text="x" />
+                            </children>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="10.0" />
+                     </VBox.margin>
+                        </Group>
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" onMouseClicked="#handleOnAddFunction" text="Add Function" textAlignment="CENTER" />
+                <Separator prefWidth="200.0" />
+            </children>
+         <BorderPane.margin>
+            <Insets left="20.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+    </left>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleReadDocument" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <Group fx:id="groupLineChart" BorderPane.alignment="CENTER">
+            <children>
+                <LineChart fx:id="lineChart" onMouseDragged="#handlePanGraph" onMousePressed="#handleOnMousePressed" onScroll="#handleOnScroll" prefHeight="394.0" prefWidth="626.0">
+                    <xAxis>
+                        <NumberAxis lowerBound="-10" side="BOTTOM" upperBound="10" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis fx:id="yAxis" lowerBound="-5" side="LEFT" upperBound="5" />
+                    </yAxis>
+                </LineChart>
+                <Button layoutX="546.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleOnHome" prefHeight="25.0" prefWidth="58.0" text="Centre" />
+                <Label fx:id="coordinate" text="coor" visible="false" />
+            </children>
+        </Group>
+
+    </center>
+    <bottom>
+        <GridPane prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+    </bottom>
+    <right>
+        <VBox prefHeight="365.0" prefWidth="147.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handleOnSolve" prefHeight="25.0" prefWidth="127.0" text="Function Analysis">
+               <VBox.margin>
+                  <Insets left="7.0" top="10.0" />
+               </VBox.margin></Button>
+                <Button mnemonicParsing="false" onAction="#switchToNormalDistribution" prefHeight="25.0" prefWidth="128.0" text="Normal Distribution">
+               <VBox.margin>
+                  <Insets left="7.0" top="10.0" />
+               </VBox.margin></Button>
+            </children>
+         <BorderPane.margin>
+            <Insets right="20.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>

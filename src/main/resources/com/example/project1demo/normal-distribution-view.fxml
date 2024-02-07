@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1demo.controller.NormalDistributionController">
+   <children>
+      <Group>
+         <children>
+
+            <LineChart fx:id="lineChart" layoutX="181.0" layoutY="24.0" prefHeight="300.0" prefWidth="544.0">
+              <xAxis>
+                  <NumberAxis prefWidth="555.0" side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </LineChart>
+             <Label fx:id="coordinate" visible="false" />
+            <VBox fx:id="leftVBox" layoutX="20.0" layoutY="20.0" prefHeight="400.0" prefWidth="153.0">
+               <children>
+                  <Label text="Normal Distribution" />
+                  <Separator prefWidth="200.0" />
+                  <VBox>
+                     <children>
+                        <Label text="Mean (μ)">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="mean" onKeyTyped="#handleOnInputMean" prefHeight="28.0" prefWidth="0.0" promptText="μ">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="1.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label prefHeight="24.0" prefWidth="136.0" text="Standard Deviation (σ)">
+                           <font>
+                              <Font name="System Italic" size="13.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="deviation" onKeyTyped="#handleOnInputStandardDeviation" prefHeight="28.0" prefWidth="0.0" promptText="σ">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="1.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#handleOnDraw" prefHeight="28.0" prefWidth="80.0" text="Draw">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="28.0" prefWidth="80.0" text="Home" />
+               </children>
+            </VBox>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

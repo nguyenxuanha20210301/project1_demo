@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Thiết lập margin cho VBox bên trái */
+#leftVBox {
+    -fx-margin: 10 20 30 40;
+}
+
+/* Thiết lập margin cho Button trong GridPane */
+GridPane > Button {
+    -fx-margin: 5;
+}
+
+/* Thiết lập margin cho GroupInput trong VBox */
+#groupInput {
+    -fx-margin: 5 0 5 0;
+
+}
+
+/* Thiết lập margin cho Label trong bottom GridPane */
+bottom GridPane Label {
+    -fx-margin: 0 10 0 0;
+}
+
+/* Thiết lập margin cho VBox bên phải */
+#right > VBox {
+    -fx-margin: 0 10 0 0;
+}
+
+/* Thiết lập margin cho LineChart và Button */
+#groupLineChart > LineChart,
+#groupLineChart > Button {
+    -fx-margin: 5;
+}

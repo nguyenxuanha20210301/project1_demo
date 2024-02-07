@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="302.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project1demo.controller.AboutController">
+    <!-- Đoạn văn bản -->
+    <Label text="Tổng quan về chương trình" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <Text layoutX="17.0" layoutY="38.0" text="Chương trình gồm có 3 giao diện chính:" wrappingWidth="561.1347351074219" />
+    <Text layoutX="17.0" layoutY="58.0" text="Giao diện mở đầu: Cho phép nhập nhiều hàm khác nhau để so sánh về đồ thị giữa các hàm, cùng với đó là các -key- để chúng ta có thể thuận lợi hơn trong việc viết hàm. Nút -Centre- là để trở về kích thước và toạ độ ban đầu (khi chúng ta đã zoom và pan quá xa)." wrappingWidth="561.1347351074219" />
+    <Text layoutX="17.0" layoutY="118.0" text="Giao diện Function Analysis: Giao diện cung cấp các chức năng: thống kê hàm (minX: giá trị đầu vào X nhỏ nhất, maxX: giá trị X lớn nhất, steps: bước nhảy của x); chức năng tính nghiệm của hàm trong một khoảng nào đó với độ chính xác lấy đến 4 chữ số thập phân; chức năng tính đạo hàm của hàm đó tại một điểm; chức năng vẽ đồ thị hàm số và đồ thị đạo hàm bậc nhất." wrappingWidth="561.1347351074219" />
+    <Text layoutX="17.0" layoutY="190" text="Giao diện Normal Distribution: Cung cấp vẽ đồ thị của phân phối chuẩn với độ lệch chuẩn và phương sai nhập vào." wrappingWidth="561.1347351074219" />
+    <Text layoutX="17.0" layoutY="250" text="Ngoài ra chúng ta cũng có thể lấy một điểm bất kỳ trên các đồ thị bằng cách click chuột vào chỗ chúng ta mong muốn." wrappingWidth="561.1347351074219" />
+
+
+   <Button onAction="#handleOnHome" layoutX="537.0" layoutY="262.0" mnemonicParsing="false" text="Home" />
+</AnchorPane>
